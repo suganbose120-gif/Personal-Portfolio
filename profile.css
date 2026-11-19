@@ -1,0 +1,4 @@
+.profile-photo{z-index:2;right:7%;bottom:-3%;width:65%;height:95%;object-fit:cover;object-position:50% 45%;border-radius:47% 47% 2px 2px;filter:grayscale(1) contrast(1.12) brightness(1.04);box-shadow:0 22px 70px #0005;animation:portrait-arrive 1.2s cubic-bezier(.2,.7,.25,1) both;will-change:opacity,transform}.hero h1{font-size:clamp(72px,9vw,130px);letter-spacing:-.075em}.hero h1 em{display:inline-block;color:var(--lime)}@keyframes portrait-arrive{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:800px){.hero h1{font-size:clamp(70px,14vw,108px)}.profile-photo{right:3%;bottom:-2%;width:68%;height:96%;object-position:50% 45%}}
+@media(max-width:440px){.hero h1{font-size:64px}.profile-photo{top:5%;bottom:-2%;right:6%;width:68%;height:95%;object-position:50% 45%}}
+@media(prefers-reduced-motion:reduce){.profile-photo{animation:none;will-change:auto}}

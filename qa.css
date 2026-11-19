@@ -1,0 +1,5 @@
+/* Keep content readable if JavaScript or IntersectionObserver is unavailable. */
+.reveal{opacity:1;transform:none}
+.reveal.will-reveal{opacity:0;transform:translateY(28px)}
+.reveal.will-reveal.visible{opacity:1;transform:translateY(0)}
+@media(prefers-reduced-motion:reduce){.reveal.will-reveal{opacity:1;transform:none}}
