@@ -1,15 +1,23 @@
-# Digital marketer portfolio
+# Sugan Bose — Portfolio
 
-This is a static, responsive portfolio site. Open `index.html` directly in a browser or host the `outputs` folder on any static web host.
+This is a responsive, single-page portfolio built with static HTML, CSS and vanilla JavaScript. It can be served directly from this directory on Vercel or any static host; there is no build command or framework runtime.
 
-## Personalize before publishing
+## Assets and motion
 
-- The site is personalized for Sugan Bose. Update the displayed name and page title in `index.html` if needed.
-- The hero uses `sugan-bose-portrait.png`, copied from the supplied photo. The original is preserved; `profile.css` applies grayscale and restrained tonal contrast to the hero image only.
-- Replace `hello@example.com` and the LinkedIn / Instagram links with your real contact destinations.
-- Update the three sample case studies, their descriptions, dates and outcome figures. Current metrics are illustrative placeholders.
-- The portrait, campaign artwork and showreel are CSS motion illustrations. To use your own video, replace the preview content in `script.js` with a `<video>` element and your video file URL; update the video-card art in `index.html` with your campaign stills.
-- The showreel modal opens from the orange campaign film banner and the case-study play button.
-- Change the colors in `style.css` under `:root` to adapt the palette.
+- `sugan-bose-portrait.png` is the original supplied portrait. The site applies grayscale and restrained contrast to the hero image in CSS.
+- `assets/` contains the supplied Tazty, TechlyAI and Valar Digital Commerce logos.
+- GSAP 3.15.1 and ScrollTrigger, plus Lenis 1.3.27, load from pinned CDN URLs in `index.html`. The site falls back to native scrolling and visible content if those libraries fail to load.
+- The showreel and campaign frames are CSS illustrations and a motion preview, not uploaded client videos.
+- DM Sans, DM Mono and Playfair Display load from Google Fonts with system fallbacks.
 
-No build step or JavaScript framework is required. The Google Fonts connection uses DM Sans, DM Mono and Playfair Display.
+## Replace sample information before presenting as verified work
+
+- The Tazty, TechlyAI and Valar descriptions are based on the supplied project details. Their campaign metrics remain illustrative layout figures; replace these with verified results when available.
+- The three certification titles and issuers were supplied for the Certifications section. No certificate URLs were supplied, so the cards do not contain view links.
+- No employment history was present in the supplied project, so the Journey timeline describes professional focus and ongoing development without inventing roles or dates.
+- The contact email is `suganbose120@gmail.com`.
+- The LinkedIn and Instagram links are set to the profiles supplied for Sugan Bose. GitHub links to `suganbose120-gif`.
+
+## Local preview
+
+Serve this directory over HTTP (for example, `npx serve .`) and open the printed local URL. The page can also be hosted as the Vercel project's static output with an empty build command.
